@@ -16,6 +16,6 @@ foreach($arg in $args)
 {
     #$desktopPath = [Environment]::GetFolderPath('Desktop')
     $destinationFile = [System.IO.Path]::ChangeExtension($arg, ".jpg")
-    Start-Process $imagickConvertExe -ArgumentList "-geometry 3840x2160 -density 300 -quality 95 $arg -background white -flatten -alpha off "  , $destinationFile
+    Start-Process $imagickConvertExe -ArgumentList "-geometry 3840x2160 -strip -density 300 -quality 95 $arg -background white -flatten -alpha off "  , $destinationFile
 
 }
