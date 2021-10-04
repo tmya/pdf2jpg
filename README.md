@@ -10,3 +10,4 @@ You should require install ImageMagick on Windows 10.
 
 1. Windows 10.
 1. ImageMagick.
+1. Ghostscript
